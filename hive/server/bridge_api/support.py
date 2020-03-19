@@ -64,7 +64,7 @@ async def normalize_post(context, post):
     post['gray'] = core['is_muted']
     post['hide'] = not core['is_valid']
 
-    promoted = sbd_amount(post['promoted']) if post['promoted'] != '0.000 STEEM' else None
+    promoted = sbd_amount(post['promoted']) if post['promoted'] != '0.000 HIVE' else None
 
     # convert to internal object
     row = None

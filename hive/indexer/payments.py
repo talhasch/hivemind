@@ -52,7 +52,7 @@ class Payments:
             return # only care about payments to null
 
         amount, token = parse_amount(op['amount'])
-        if token != 'SBD':
+        if token != 'HBD':
             return # only care about SBD payments
 
         url = op['memo']
